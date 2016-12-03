@@ -1,0 +1,12 @@
+C:\Users\japro_000\documents\visual studio 2013\Projects\oop3\oop3\oop3_UnitTests\bin\Release\Templates\oop3ExtFile.oop3
+C:\Users\japro_000\documents\visual studio 2013\Projects\oop3\oop3\oop3_UnitTests\bin\Release\Templates\oop3.vsdir
+C:\Users\japro_000\documents\visual studio 2013\Projects\oop3\oop3\oop3_UnitTests\bin\Release\oop3_UnitTests.dll
+C:\Users\japro_000\documents\visual studio 2013\Projects\oop3\oop3\oop3_UnitTests\bin\Release\oop3_UnitTests.pdb
+C:\Users\japro_000\documents\visual studio 2013\Projects\oop3\oop3\oop3_UnitTests\bin\Release\Microsoft.VSSDK.TestHostFramework.dll
+C:\Users\japro_000\documents\visual studio 2013\Projects\oop3\oop3\oop3_UnitTests\bin\Release\Microsoft.VSSDK.UnitTestLibrary.dll
+C:\Users\japro_000\documents\visual studio 2013\Projects\oop3\oop3\oop3_UnitTests\bin\Release\oop3.dll
+C:\Users\japro_000\documents\visual studio 2013\Projects\oop3\oop3\oop3_UnitTests\bin\Release\oop3.pdb
+C:\Users\japro_000\documents\visual studio 2013\Projects\oop3\oop3\oop3_UnitTests\bin\Release\Microsoft.VSSDK.TestHostFramework.pdb
+C:\Users\japro_000\documents\visual studio 2013\Projects\oop3\oop3\oop3_UnitTests\obj\Release\oop3_UnitTests.csprojResolveAssemblyReference.cache
+C:\Users\japro_000\documents\visual studio 2013\Projects\oop3\oop3\oop3_UnitTests\obj\Release\oop3_UnitTests.dll
+C:\Users\japro_000\documents\visual studio 2013\Projects\oop3\oop3\oop3_UnitTests\obj\Release\oop3_UnitTests.pdb

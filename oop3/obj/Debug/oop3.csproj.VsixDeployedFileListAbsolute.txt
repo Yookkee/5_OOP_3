@@ -1,0 +1,6 @@
+C:\Users\japro_000\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\japroc_company\oop3\1.0\\oop3.dll
+C:\Users\japro_000\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\japroc_company\oop3\1.0\\oop3.pkgdef
+C:\Users\japro_000\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\japroc_company\oop3\1.0\\extension.vsixmanifest
+C:\Users\japro_000\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\japroc_company\oop3\1.0\Templates\\oop3ExtFile.oop3
+C:\Users\japro_000\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\japroc_company\oop3\1.0\Templates\\oop3.vsdir
+C:\Users\japro_000\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\japroc_company\oop3\1.0\\oop3.pdb

@@ -1,0 +1,11 @@
+C:\Users\japro_000\documents\visual studio 2013\Projects\oop3\oop3\oop3_IntegrationTests\bin\Release\Templates\oop3ExtFile.oop3
+C:\Users\japro_000\documents\visual studio 2013\Projects\oop3\oop3\oop3_IntegrationTests\bin\Release\Templates\oop3.vsdir
+C:\Users\japro_000\documents\visual studio 2013\Projects\oop3\oop3\oop3_IntegrationTests\bin\Release\oop3_IntegrationTests.dll
+C:\Users\japro_000\documents\visual studio 2013\Projects\oop3\oop3\oop3_IntegrationTests\bin\Release\oop3_IntegrationTests.pdb
+C:\Users\japro_000\documents\visual studio 2013\Projects\oop3\oop3\oop3_IntegrationTests\bin\Release\Microsoft.VSSDK.TestHostFramework.dll
+C:\Users\japro_000\documents\visual studio 2013\Projects\oop3\oop3\oop3_IntegrationTests\bin\Release\oop3.dll
+C:\Users\japro_000\documents\visual studio 2013\Projects\oop3\oop3\oop3_IntegrationTests\bin\Release\oop3.pdb
+C:\Users\japro_000\documents\visual studio 2013\Projects\oop3\oop3\oop3_IntegrationTests\bin\Release\Microsoft.VSSDK.TestHostFramework.pdb
+C:\Users\japro_000\documents\visual studio 2013\Projects\oop3\oop3\oop3_IntegrationTests\obj\Release\oop3_IntegrationTests.csprojResolveAssemblyReference.cache
+C:\Users\japro_000\documents\visual studio 2013\Projects\oop3\oop3\oop3_IntegrationTests\obj\Release\oop3_IntegrationTests.dll
+C:\Users\japro_000\documents\visual studio 2013\Projects\oop3\oop3\oop3_IntegrationTests\obj\Release\oop3_IntegrationTests.pdb
