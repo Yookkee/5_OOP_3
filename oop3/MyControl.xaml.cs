@@ -67,12 +67,61 @@ namespace japroc_company.oop3
             int counter = 0;
             int start = 0;
             int end = 0;
+            int line_func_name = -1;
             for (int i = 0; i < fileContent.Length; ++i)
             {
                 for (int j = 0; j < fileContent[i].Length; ++j)
                 {
+                    
+
                     if (fileContent[i][j] == '{')
                     {
+
+                        if (counter > 0)
+                        {
+                            counter++;
+                            continue;
+                        }
+
+
+                        bool found = false;
+                        int k;
+                        // searching for for first not empty symbol
+                        // if k == j - not found
+                        // k < j - found
+                        for (k = 0; k < j; k++)
+                        {
+                            if (fileContent[i][k] != ' ' && fileContent[i][k] != '\t')
+                            {
+                                break;
+                            }
+                        }
+                        
+                        // if k==j then line with func_name is earlier
+                        line_func_name = i - (((k == j) == true) ? 1 : 0);
+
+                        
+                        // searching for ')' in line_func_name before '{' and '\n'
+                        found = false;
+                        int l;
+                        for (l = 0; l < fileContent[line_func_name].Length && fileContent[line_func_name][l] != '{'; ++l)
+                        {
+                            if (fileContent[line_func_name][l] == ')')
+                            {
+                                found = true;
+                                break;
+                            }
+                        }
+
+                        if (fileContent[line_func_name].StartsWith("namespace") ||
+                            fileContent[line_func_name].StartsWith("class") ||
+                            fileContent[line_func_name].StartsWith("template") ||
+                            found == false)
+                        {
+                            continue;
+                        } 
+
+                        
                         if (counter == 0)
                         {
                             start = i;
@@ -94,15 +143,27 @@ namespace japroc_company.oop3
 
 
                             String func_name = "";
-                            int line_func_name;
-                            line_func_name = start_line - ((fileContent[start_line].StartsWith("{") == true) ? 1 : 0);
+                            //int line_func_name;
+                            //line_func_name = start_line - ((fileContent[start_line].StartsWith("{") == true) ? 1 : 0);
+
+                            
+                            bool symb_found = false;
+                            
                             for (j = 0; j < fileContent[line_func_name].Length; j++ )
                             {
-                                char c = fileContent[line_func_name][j];
+                                char c;
+                                c = fileContent[line_func_name][j];
                                 if (c == '{')
                                     break;
 
-                                func_name += c;
+                                if (c != '\t' && c != ' ' && symb_found == false)
+                                {
+                                    symb_found = true;
+                                }
+                                if (symb_found == true)
+                                {
+                                    func_name += c;
+                                }
                             }
 
 
@@ -272,7 +333,7 @@ namespace japroc_company.oop3
         private void Calculate_Key_Words(int start_line, int end_line, ref int amount_key_words)
         {
             String[] arr = { 
-                           "alignas", "alignof", "and", "and_eq", "asm", "auto", "bitand", 
+                           /*"alignas", "alignof", "and", "and_eq", "asm", "auto", "bitand", 
                            "bitor", "bool", "break", "case", "catch", "char", "char16_t", 
                            "char32_t", "class", "compl", "const", "constexpr", "const_cast", 
                            "continue", "decltype", "default", "delete", "do", "double", "dynamic_cast", 
@@ -283,7 +344,19 @@ namespace japroc_company.oop3
                            "short", "signed", "sizeof", "static", "static_assert", "static_cast", 
                            "struct", "switch", "template", "this", "thread_local", "throw", "true", 
                            "try", "typedef", "typeid", "typename", "union", "unsigned", "using", 
-                           "virtual", "void", "volatile", "wchar_t", "while", "xor", "xor_eq"
+                           "virtual", "void", "volatile", "wchar_t", "while", "xor", "xor_eq"*/
+                           "and", "and_eq", "asm", "auto", 
+                           "bitor", "bool", "break", "case", "catch", "char", 
+                           "class", "const", "constexpr", "const_cast", 
+                           "continue", "decltype", "default", "delete", "do", "double", "dynamic_cast", 
+                           "else", "enum", "explicit", "export", "extern", "false", "float", "for", 
+                           "friend", "goto", "if", "inline", "int", "long", "mutable", "namespace", 
+                           "new", "noexcept", "not", "nullptr", "operator", "or", 
+                           "private", "protected", "public", "register", "reinterpret_cast", "return", 
+                           "short", "signed", "sizeof", "static", "static_assert", "static_cast", 
+                           "struct", "switch", "template", "this", "thread_local", "throw", "true", 
+                           "try", "typedef", "typeid", "typename", "union", "unsigned", "using", 
+                           "virtual", "void", "volatile", "while", "xor"
                            };
 
 
